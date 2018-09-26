@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Error happened</title>
+</head>
+<body>
+	<div class="panel panel-default">
+		<div class="panel-body">
+			<h1>Error happened on the requested URL: <a th:text= "${url}"></a> </h1>
+			<p>Application has encountered an error. Please contact support on 121321211</p>
+			
+			<p> Reason: <a th:text= "${exception?.message}"></a></p>
+		</div>
+	</div>
+</body>
+</html>
